@@ -1,0 +1,35 @@
+[DB]
+host=thingsboard.cluster-cjpmjgizagbq.ap-northeast-2.rds.amazonaws.com
+dbname=fuel_cell_cart
+user=fuel_cell_cart
+password=ionfuelcellcartdev
+port=5432
+table=["cart_metrics","optimization"]
+
+[gid]
+course1=gs
+course2=sch
+course3=as
+
+[gateway_id]
+course1=["a21910213007", "a21910213008"]
+course2=["a32104293012", "a32104293017", "a32104293020"]
+course3=["a32104293011", "a32104293013", "a32104293016"]
+
+[server]
+host=0.0.0.0
+local=127.0.0.1
+container_host=top_server
+port=3300
+
+[settings]
+seconds=10
+count=1080
+error=0.07
+feature=["time", "gateway_id", "stack_power", "stack_temp", "ambient_temp", "meoh_concentration"]
+
+[condition]
+opmode=2
+stack_power=1500
+
+
